@@ -24,6 +24,7 @@
                         'primary-color': '#777',
                         'gredient-start': '#FF8938',
                         'gredient-end': '#F00',
+                        'title-color': '#1C1C1C',
                     }
                 }
             }
@@ -35,36 +36,63 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <!-- fontawesome link   -->
+    <script src="https://kit.fontawesome.com/d1505a3dc4.js" crossorigin="anonymous"></script>
 
     <title>Tea House</title>
 
 </head>
+<!-- <i class="fa-solid fa-square-arrow-up-right"></i>  -->
 
 
 <body class="font-manrope">
-    <header
-        class="max-w-screen-xl mx-auto px-10 md:px-20 lg:px-30 py-5 my-10 bg-slate-200 flex flex-col md:flex-row gap-7">
-        <div class="space-y-5">
-            <h2 class="text-6xl font-extrabold">It's good <br>
+    <!-- banner section  -->
+    <header class="container mx-auto px-3 md:px-20 lg:px-30 py-5 my-20 bg-white flex flex-col lg:flex-row justify-between items-center text-center md:text-left">
+
+        <div class="space-y-5 flex-1">
+
+            <h2 class="text-6xl font-extrabold text-title-color">It's good <br>
                 tea time at The <br>
                 Tea House
             </h2>
-            <p class="text-primary-color">
+
+            <p class="text-primary-color text-lg font-semibold">
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
             </p>
 
-            <button class="btn bg-gradient-to-r from-gredient-start to-gredient-end text-white"> Explore More</button>
+            <button class="bg-gradient-to-r from-gredient-start to-gredient-end text-white text-xl font-bold px-5 py-4 rounded-lg"> Explore More
+                <i class="fa-solid fa-arrow-trend-up pl-2"></i>
+            </button>
+            
         </div>
 
-        <div class="">
-            <img src="images/banner.png" alt="">
-            <div>
-                
+        <div class="relative flex-1 ">
+            <img src="images/banner.png" alt="" class="w-auto">
+            <!-- class="flex justify-center items-center space-x-2 bg-white rounded-lg shadow-lg shadow-[#0000000f]-500/50 p-2 md:p-4 w-32 lg:w-52 h-auto -mt-40" -->
+
+            <div class="flex justify-around items-center w-40 md:w-52 py-2 absolute bottom-3 left-10 rounded-lg  shadow-lg shadow-gray-500/50 bg-white " >
+
+                <i class="fa-solid fa-star text-amber-500 text-lg md:text-3xl p-1 md:p-2"></i>
+                <span class="">
+                    <h2 class="text-title-color text-lg md:text-3xl font-extrabold">5.00</h2>
+
+                    <p class="text-primary-color text-sm  md:text-base font-semibold ">Trust Pilot Ratings</p>
+                </span>
             </div>
         </div>
 
     </header>
+
     <main>
+         <!-- Featured products section  -->
+         <section class="max-w-screen-xl mx-auto  md:px-20 lg:px-30 py-5 my-10 bg-white">
+            <div class="text-center ">
+                <h2 class="text-[2.8rem] font-extrabold ">Our Featured Products</h2>
+                <p class="text-primary-color text-base font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br> by injected humour, or randomised words which don't look even slightly believable. </p>
+                
+            </div>
+
+        </section>
 
     </main>
 
